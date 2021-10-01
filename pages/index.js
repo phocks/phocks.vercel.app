@@ -14,7 +14,7 @@ export default function Home() {
   const fetcher = (url) => fetch(url).then((r) => r.json());
   const { data, error } = useSWR("/feed.json", fetcher);
 
-  const { items } = data || [];
+  const { items, title } = data || [];
 
   useEffect(() => {}, []);
 
@@ -23,26 +23,32 @@ export default function Home() {
       <Head></Head>
 
       {error && <div>failed to load</div>}
-      <h1>{data?.title}</h1>
-      <div className={styles.subtitle}>
-        {data?.description} Repo{" "}
-        <a href="https://github.com/phocks/phocks.vercel.app">here</a>.
-      </div>
 
-      <div className={styles.posts}>
-        {items?.map((item, iteration) => {
-          const { date_published, content_text } = item;
+      {!data ? (
+        <p>Loading...</p>
+      ) : (
+        <>
+          <h1>{title}</h1>
+          <div className={styles.subtitle}>
+            {data?.description} Repo{" "}
+            <a href="https://github.com/phocks/phocks.vercel.app">here</a>.
+          </div>
+          <div className={styles.posts}>
+            {items?.map((item, iteration) => {
+              const { date_published, content_text } = item;
 
-          return (
-            <div className={styles.item} key={iteration}>
-              <div className={styles.date}>
-                {dayjs(date_published).fromNow()}
-              </div>
-              {content_text}
-            </div>
-          );
-        })}
-      </div>
+              return (
+                <div className={styles.item} key={iteration}>
+                  <div className={styles.date}>
+                    {dayjs(date_published).fromNow()}
+                  </div>
+                  {content_text}
+                </div>
+              );
+            })}
+          </div>
+        </>
+      )}
     </div>
   );
 }
