@@ -4,6 +4,11 @@
   "description": "A really simple micro feed of updates.",
   "items": [
     {
+      "id": "5",
+      "date_published": "2021-10-02T08:34:00+10:00",
+      "content_text": "Gotta see if I can edit and commit a JSON file on GitHub in NodeJS so I can automate posts on here."
+    },
+    {
       "id": "4",
       "date_published": "2021-10-01T21:28:00+10:00",
       "content_text": "Playing some Battletech. Vada is watching Frozen."
