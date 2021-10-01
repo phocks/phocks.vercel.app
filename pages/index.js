@@ -31,7 +31,8 @@ export default function Home() {
           <h1>{title}</h1>
           <div className={styles.subtitle}>
             {data?.description} Repo{" "}
-            <a href="https://github.com/phocks/phocks.vercel.app">here</a>.
+            <a href="https://github.com/phocks/phocks.vercel.app">here</a>. Feed{" "}
+            <a href="/feed.json">here</a>.
           </div>
           <div className={styles.posts}>
             {items?.map((item, iteration) => {
@@ -40,7 +41,9 @@ export default function Home() {
               return (
                 <div className={styles.item} key={iteration}>
                   <div className={styles.date}>
-                    {dayjs(date_published).fromNow()}
+                    <abbr title={date_published}>
+                      {dayjs(date_published).fromNow()}
+                    </abbr>
                   </div>
                   {content_text}
                 </div>
