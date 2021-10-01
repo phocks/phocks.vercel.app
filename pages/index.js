@@ -32,7 +32,8 @@ export default function Home() {
           <div className={styles.subtitle}>
             {data?.description} Repo{" "}
             <a href="https://github.com/phocks/phocks.vercel.app">here</a>. Feed{" "}
-            <a href="/feed.json">here</a>.
+            <a href="/feed.json">here</a>. Uses{" "}
+            <a href="https://www.jsonfeed.org/">JSON Feed</a> for syndication.
           </div>
           <div className={styles.posts}>
             {items?.map((item, iteration) => {

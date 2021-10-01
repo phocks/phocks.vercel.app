@@ -4,6 +4,11 @@
   "description": "A really simple micro feed of updates.",
   "items": [
     {
+      "id": "3",
+      "date_published": "2021-10-01T20:47:00+10:00",
+      "content_text": "OK! Almost ready for a minimal viable product. Maybe!"
+    },
+    {
       "id": "2",
       "date_published": "2021-10-01T19:49:00+10:00",
       "content_text": "Attempting to make some kind of front-end for this thing..."

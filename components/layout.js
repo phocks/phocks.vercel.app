@@ -4,7 +4,7 @@ export default function Layout({ children }) {
   return (
     <>
     <Head>
-        <title>phocks microblog</title>
+        <title>JB - a micro blog</title>
         <meta name="description" content="A micro blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

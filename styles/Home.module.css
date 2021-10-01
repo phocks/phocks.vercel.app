@@ -1,16 +1,17 @@
 .container {
-  max-width: 600px;
+  max-width: 550px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
   text-align: left;
   padding-right: 1rem;
   padding-left: 1rem;
+  line-height: 1.5;
 }
 
 .subtitle {
   font-size: 1.1rem;
-  margin-top: -1rem;
+  margin-top: -1.2rem;
   font-style: italic;
 }
 
@@ -20,7 +21,6 @@
 }
 
 .item {
-  line-height: 1.5;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
