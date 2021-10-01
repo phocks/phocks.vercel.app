@@ -1,12 +1,17 @@
 {
-    "version": "https://jsonfeed.org/version/1.1",
-    "title": "Joshua Byrd",
-    "description": "A micro feed of updates.",
-    "items": [
-        {
-            "id": "1",
-            "date_published": "2021-10-01T11:18:43+10:00",
-            "content_text": "Just setting up my bird feed"
-        }
-    ]
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Joshua Byrd",
+  "description": "A micro feed of updates.",
+  "items": [
+    {
+      "id": "2",
+      "date_published": "2021-10-01T19:49:00+10:00",
+      "content_text": "Attempting to make some kind of front-end for this thing..."
+    },
+    {
+      "id": "1",
+      "date_published": "2021-10-01T11:18:43+10:00",
+      "content_text": "Just setting up my bird feed"
+    }
+  ]
 }
