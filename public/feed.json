@@ -4,6 +4,11 @@
   "description": "A really simple micro feed of updates.",
   "items": [
     {
+      "id": "7",
+      "date_published": "2021-10-03T17:52:35+10:00",
+      "content_text": "Updating status via a React Native app. Let's see if it works ..."
+    },
+    {
       "id": "6",
       "date_published": "2021-10-03T07:48:00+10:00",
       "content_text": "Right! I seem to be getting somewhere. The plan is to make a React Native app on my phone. Then it will use the GitHub API to add new posts."
