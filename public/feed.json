@@ -4,6 +4,11 @@
   "description": "A really simple micro feed of updates.",
   "items": [
     {
+      "id": "19",
+      "date_published": "2021-10-08T10:37:58+10:00",
+      "content_text": "Don't wanna forget about this little micro blog. It's difficult though without the constant stream of notifications that other apps like Twitter etc use to get you hooked."
+    },
+    {
       "id": "18",
       "date_published": "2021-10-06T15:00:36+10:00",
       "content_text": "Trying to get into the Elm programming language. I like it but yeah I dunno."
