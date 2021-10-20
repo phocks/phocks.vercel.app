@@ -10,8 +10,16 @@ import styles from "../styles/Home.module.css";
 const Posts = () => {};
 
 export default function Home() {
-  const fetcher = (url) => fetch(url).then((r) => r.json());
-  const { data, error } = useSWR("/feed.json", fetcher);
+  const fetcher = (urls) => {
+    // fetch(url).then((r) => r.json());
+    Promise.all(urls.map((url) => fetch(url).then((resp) => resp.json()))).then(
+      console.log
+    );
+  };
+  const { data, error } = useSWR(
+    ["https://phocks.vercel.app/feed.json", "https://ash.ms/micro.json"],
+    fetcher
+  );
 
   const { items, title } = data || [];
 
