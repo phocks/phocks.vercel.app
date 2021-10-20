@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { useEffect } from "react";
 import useSWR from "swr";
 import * as dayjs from "dayjs";
@@ -7,8 +6,6 @@ var relativeTime = require("dayjs/plugin/relativeTime");
 dayjs.extend(relativeTime);
 
 import styles from "../styles/Home.module.css";
-
-const Posts = () => {};
 
 export default function Home() {
   const fetcher = (url) => fetch(url).then((r) => r.json());
