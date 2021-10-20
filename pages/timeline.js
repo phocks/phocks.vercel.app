@@ -7,19 +7,23 @@ dayjs.extend(relativeTime);
 
 import styles from "../styles/Home.module.css";
 
-const Posts = () => {};
-
 export default function Home() {
-  const fetcher = (urls) => {
-    // fetch(url).then((r) => r.json());
-    Promise.all(urls.map((url) => fetch(url).then((resp) => resp.json()))).then(
-      console.log
-    );
+  const fetcher = (...urls) => {
+      console.log(urls);
+    const f = (u) => fetch(u).then((r) => r.json());
+
+  if (urls.length > 1) {
+    return Promise.all(urls.map(f));
+  }
+  return f(urls);
   };
   const { data, error } = useSWR(
-    ["https://phocks.vercel.app/feed.json", "https://ash.ms/micro.json"],
+    ["https://phocks.vercel.app/feed.json",
+    "https://ash.ms/micro.json"],
     fetcher
   );
+
+  console.log(data)
 
   const { items, title } = data || [];
 
