@@ -1,8 +1,110 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Joshua Byrd",
+  "home_page_url": "https://phocks.vercel.app/",
+  "feed_url": "https://phocks.vercel.app/feed.json",
   "description": "A really simple micro feed of updates.",
   "items": [
+    {
+      "id": "24",
+      "date_published": "2021-10-20T12:35:06+10:00",
+      "content_text": "Having lunch with Ash!!"
+    },
+    {
+      "id": "23",
+      "date_published": "2021-10-18T12:13:22+10:00",
+      "content_text": "It's a bit windy in the city today."
+    },
+    {
+      "id": "22",
+      "date_published": "2021-10-13T17:15:54+10:00",
+      "content_text": "On the train home, thinking about a few things."
+    },
+    {
+      "id": "21",
+      "date_published": "2021-10-11T20:18:20+10:00",
+      "content_text": "Cooking with vegetables is a magical experience. I'm trying to find more magic in existence lately. Will see where this leads."
+    },
+    {
+      "id": "20",
+      "date_published": "2021-10-10T11:24:12+10:00",
+      "content_text": "Slightly hungover. Worth it. Our team won an award last night."
+    },
+    {
+      "id": "19",
+      "date_published": "2021-10-08T10:37:58+10:00",
+      "content_text": "Don't wanna forget about this little micro blog. It's difficult though without the constant stream of notifications that other apps like Twitter etc use to get you hooked."
+    },
+    {
+      "id": "18",
+      "date_published": "2021-10-06T15:00:36+10:00",
+      "content_text": "Trying to get into the Elm programming language. I like it but yeah I dunno."
+    },
+    {
+      "id": "17",
+      "date_published": "2021-10-05T23:41:08+10:00",
+      "content_text": "Damn this Squid Game is getting intense."
+    },
+    {
+      "id": "16",
+      "date_published": "2021-10-05T11:59:00+10:00",
+      "content_text": "The most surprising thing I'm enjoying about this micro blogging thing is the ability to edit posts. Twitter is dead to me (not really)."
+    },
+    {
+      "id": "15",
+      "date_published": "2021-10-05T07:49:40+10:00",
+      "content_text": "Making hummus. Can't wait to eat it!"
+    },
+    {
+      "id": "14",
+      "date_published": "2021-10-04T20:29:06+10:00",
+      "content_text": "Had a lovely dinner out on the back deck. It's finally warm enough!"
+    },
+    {
+      "id": "13",
+      "date_published": "2021-10-04T17:07:48+10:00",
+      "content_text": "Soaking some chickpeas. Gonna make more hummus tomorrow."
+    },
+    {
+      "id": "12",
+      "date_published": "2021-10-04T11:56:32+10:00",
+      "content_text": "It's getting pretty warm today. Summer is rolling around."
+    },
+    {
+      "id": "11",
+      "date_published": "2021-10-04T10:05:56+10:00",
+      "content_text": "Time to make a coffee! Mmmmmm coffee."
+    },
+    {
+      "id": "10",
+      "date_published": "2021-10-04T07:04:02+10:00",
+      "content_text": "Making a tea. Getting ready to start a new week. Forgot to take the public holiday off work :("
+    },
+    {
+      "id": "9",
+      "date_published": "2021-10-03T20:58:48+10:00",
+      "content_text": "Yes it works!! Alright, now I can update any time I want, from anywhere. Gonna go watch SNL. Later."
+    },
+    {
+      "id": "8",
+      "date_published": "2021-10-03T20:55:11+10:00",
+      "content_text": "Built out the app for my phone. Let's see if this works..."
+    },
+    {
+      "id": "7",
+      "date_published": "2021-10-03T17:52:35+10:00",
+      "content_text": "Updating status via a React Native app. Let's see if it works ..."
+    },
+    {
+      "id": "6",
+      "date_published": "2021-10-03T07:48:00+10:00",
+      "content_text": "Right! I seem to be getting somewhere. The plan is to make a React Native app on my phone. Then it will use the GitHub API to add new posts."
+    },
+    {
+      "id": "5",
+      "date_published": "2021-10-02T08:34:00+10:00",
+      "content_text": "Gotta see if I can edit and commit a JSON file on GitHub in NodeJS so I can automate posts on here."
+    },
     {
       "id": "4",
       "date_published": "2021-10-01T21:28:00+10:00",

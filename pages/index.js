@@ -7,8 +7,6 @@ dayjs.extend(relativeTime);
 
 import styles from "../styles/Home.module.css";
 
-const Posts = () => {};
-
 export default function Home() {
   const fetcher = (url) => fetch(url).then((r) => r.json());
   const { data, error } = useSWR("/feed.json", fetcher);
