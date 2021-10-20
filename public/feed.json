@@ -1,6 +1,8 @@
 {
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Joshua Byrd",
+  "home_page_url": "https://phocks.vercel.app/",
+  "feed_url": "https://phocks.vercel.app/feed.json",
   "description": "A really simple micro feed of updates.",
   "items": [
     {
