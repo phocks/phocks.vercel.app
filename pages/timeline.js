@@ -55,7 +55,7 @@ export default function Timeline({ data }) {
       <Head></Head>
 
       <>
-        <h1>phocks&rsquo;s timeline</h1>
+        <h1>phocks&rsquo;s following timeline</h1>
         <div className={styles.subtitle}>
           Updates from people I follow. Repo{" "}
           <a href="https://github.com/phocks/phocks.vercel.app">here</a>. Feed{" "}
