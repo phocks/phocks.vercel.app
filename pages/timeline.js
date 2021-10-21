@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import * as dayjs from "dayjs";
 var relativeTime = require("dayjs/plugin/relativeTime");
 dayjs.extend(relativeTime);
+import Linkify from 'react-linkify';
 
 import Navigation from "../components/navigation";
 import styles from "../styles/Home.module.css";
@@ -78,7 +79,7 @@ export default function Timeline({ data }) {
                     {title}
                   </a>
                 </div>
-                {content_text}
+                <Linkify>{content_text}</Linkify>
               </div>
             );
           })}

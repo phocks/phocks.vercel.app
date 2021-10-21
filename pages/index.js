@@ -4,6 +4,7 @@ import useSWR from "swr";
 import * as dayjs from "dayjs";
 var relativeTime = require("dayjs/plugin/relativeTime");
 dayjs.extend(relativeTime);
+import Linkify from "react-linkify";
 
 import Navigation from "../components/navigation";
 
@@ -46,7 +47,7 @@ export default function Home() {
                       {dayjs(date_published).fromNow()}
                     </abbr>
                   </div>
-                  {content_text}
+                  <Linkify>{content_text}</Linkify>
                 </div>
               );
             })}
