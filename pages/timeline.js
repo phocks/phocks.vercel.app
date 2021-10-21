@@ -52,7 +52,7 @@ export default function Timeline({ data }) {
 
   return (
     <div className={styles.container}>
-      <Head></Head>
+      <Head><title>Timeline - JB - a micro blog</title></Head>
 
       <>
         <h1>A following timeline</h1>
