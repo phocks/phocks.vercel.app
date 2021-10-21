@@ -55,7 +55,7 @@ export default function Timeline({ data }) {
       <Head><title>Timeline - JB - a micro blog</title></Head>
 
       <>
-        <h1>A following timeline</h1>
+        <h1>Following timeline</h1>
         <div className={styles.subtitle}>
           Updates from people I follow. Including Ash Kyd and me.
         </div>
