@@ -17,7 +17,6 @@ export async function getServerSideProps() {
       const resp = await fetch(url);
       const feedObject = await resp.json();
       const finalFeed = { fetched_url: url, ...feedObject };
-      console.log(finalFeed);
       return finalFeed;
     })
   );
@@ -26,33 +25,35 @@ export async function getServerSideProps() {
   return { props: { data } };
 }
 
+const getItems = (data) => {
+  const itemsArray = data.map((d) => {
+    const { items, title, fetched_url } = d;
+
+    const itemsWithSource = items.map((item) => {
+      return { title, fetched_url, ...item };
+    });
+
+    return itemsWithSource;
+  });
+
+  const combinedItems = itemsArray.flat(1);
+
+  const sortedCombinedItems = combinedItems.sort((a, b) => {
+    // TODO: Apparently creating new Dates like this is bad
+    // Maybe find another way
+    return new Date(b.date_published) - new Date(a.date_published);
+  });
+  return { items: sortedCombinedItems };
+};
+
 export default function Timeline({ data }) {
-  const getItems = () => {
-    const itemsArray = data.map((d) => {
-      const { items, title, fetched_url } = d;
-
-      const itemsWithSource = items.map((item) => {
-        return { title, fetched_url, ...item };
-      });
-
-      return itemsWithSource;
-    });
-
-    const combinedItems = itemsArray.flat(1);
-
-    const sortedCombinedItems = combinedItems.sort((a, b) => {
-      // return b.date_published - a.date_published
-
-      return new Date(b.date_published) - new Date(a.date_published);
-    });
-    return { items: sortedCombinedItems };
-  };
-
-  const { items } = getItems();
+  const { items } = getItems(data);
 
   return (
     <div className={styles.container}>
-      <Head><title>Timeline - JB - a micro blog</title></Head>
+      <Head>
+        <title>Timeline - JB - a micro blog</title>
+      </Head>
 
       <>
         <h1>Following timeline</h1>
