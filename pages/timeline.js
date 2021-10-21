@@ -57,10 +57,7 @@ export default function Timeline({ data }) {
       <>
         <h1>A following timeline</h1>
         <div className={styles.subtitle}>
-          Updates from people I follow. Repo{" "}
-          <a href="https://github.com/phocks/phocks.vercel.app">here</a>. Feed{" "}
-          <a href="/feed.json">here</a>. Uses{" "}
-          <a href="https://www.jsonfeed.org/">JSON Feed</a> for syndication.
+          Updates from people I follow. Including Ash Kyd and me.
         </div>
 
         <div className={styles.posts}>
