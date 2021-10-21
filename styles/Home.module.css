@@ -9,9 +9,12 @@
   line-height: 1.5;
 }
 
+.title {
+  margin-bottom: 0;
+}
+
 .subtitle {
   font-size: 1.1rem;
-  margin-top: -1.2rem;
   font-style: italic;
 }
 
@@ -36,4 +39,13 @@
   border-bottom: none;
   cursor: help !important;
   text-decoration: none;
+}
+
+.source {
+  text-decoration: none;
+  color: gray;
+}
+
+.source:hover {
+  text-decoration: underline;
 }

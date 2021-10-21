@@ -5,6 +5,8 @@ import * as dayjs from "dayjs";
 var relativeTime = require("dayjs/plugin/relativeTime");
 dayjs.extend(relativeTime);
 
+import Navigation from "../components/navigation";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -25,7 +27,8 @@ export default function Home() {
         <p>Loading...</p>
       ) : (
         <>
-          <h1>{title}</h1>
+          <h1 class={styles.title}>{title}</h1>
+          <Navigation />
           <div className={styles.subtitle}>
             {data?.description} Repo{" "}
             <a href="https://github.com/phocks/phocks.vercel.app">here</a>. Feed{" "}

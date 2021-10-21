@@ -4,7 +4,8 @@ import * as dayjs from "dayjs";
 var relativeTime = require("dayjs/plugin/relativeTime");
 dayjs.extend(relativeTime);
 
-import styles from "../styles/Timeline.module.css";
+import Navigation from "../components/navigation";
+import styles from "../styles/Home.module.css";
 
 const feedsToFetch = [
   "https://phocks.vercel.app/feed.json",
@@ -56,7 +57,8 @@ export default function Timeline({ data }) {
       </Head>
 
       <>
-        <h1>Following timeline</h1>
+        <h1 className={styles.title}>Following timeline</h1>
+        <Navigation />
         <div className={styles.subtitle}>
           Updates from people I follow. Including Ash Kyd and me.
         </div>
