@@ -55,7 +55,7 @@ export default function Timeline({ data }) {
       <Head></Head>
 
       <>
-        <h1>phocks's timeline</h1>
+        <h1>phocks&rsquo;s timeline</h1>
         <div className={styles.subtitle}>
           Updates from people I follow. Repo{" "}
           <a href="https://github.com/phocks/phocks.vercel.app">here</a>. Feed{" "}
@@ -72,7 +72,11 @@ export default function Timeline({ data }) {
                 <div className={styles.date}>
                   <abbr title={date_published}>
                     {dayjs(date_published).fromNow()}
-                  </abbr> &middot; <a className={styles.source} href={fetched_url}>{title}</a>
+                  </abbr>{" "}
+                  &middot;{" "}
+                  <a className={styles.source} href={fetched_url}>
+                    {title}
+                  </a>
                 </div>
                 {content_text}
               </div>
