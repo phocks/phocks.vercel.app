@@ -1,5 +1,6 @@
 .root {
   margin-bottom: 1rem;
+  color: rgb(100, 100, 100);
 }
 
 .root a {
@@ -8,5 +9,5 @@
 }
 
 .root a:hover {
-  text-decoration: wavy underline;
+  text-decoration: underline;
 }
