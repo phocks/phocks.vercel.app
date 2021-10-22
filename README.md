@@ -18,3 +18,7 @@ I'll keep a list of micro blogs here:
 
 - [Joshua Byrd](https://phocks.vercel.app)
 - [Ash Kyd](https://ash.ms/micro.json)
+
+### Alternate URLs
+
+- https://birdapp.ga
