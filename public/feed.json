@@ -6,6 +6,11 @@
   "description": "A really simple micro feed of updates.",
   "items": [
     {
+      "id": "29",
+      "date_published": "2021-10-24T15:06:17+10:00",
+      "content_text": "I registered the little free domain birdapp.ga and it seems to be working"
+    },
+    {
       "id": "28",
       "date_published": "2021-10-22T11:38:00+10:00",
       "content_text": "Made some changes to make the Timeline page a bit more Jackstack-ish instead of relying on server-side \"serverless\" functions. Feels a bit snappier. https://github.com/phocks/phocks.vercel.app"
